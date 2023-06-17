@@ -11,7 +11,7 @@ function Exchanger() {
   }
   return (
     <>
-      <div className="  grid  rounded-lg place-content-center min-h-screen px-5 ">
+      <div className="  grid relative rounded-lg place-content-center min-h-screen px-5 ">
         <div className=" max-w-sm mx-auto  px-8 sm:mt-10 rounded-lg py-6 bg-black bg-opacity-50  text-center  ">
           <div className="flex items-center my-3  justify-between">
             <h3 className="text-2xl font-bold text-white text-center">
@@ -37,7 +37,7 @@ function Exchanger() {
               id="underline_select"
               className=" py-2.5 px-0  text-sm text-center text-white bg-transparent border-0 border-b-2 border-gray-200 appearance-none  dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
               value={value} onChange={(event)=>{  setValue(event.target.value);}}>
-              <option selected className="bg-black ">{value}</option>
+              <option selected  value={value} className="bg-black ">{value}</option>
               <option value="MUD" className="bg-black ">MUD</option>
               <option value="ZAR" className="bg-black ">ZAR</option>
               <option value="ETH" className="bg-black ">ETH</option>
@@ -65,7 +65,7 @@ function Exchanger() {
               id="underline_select"
               className=" py-2.5 px-0  text-sm text-center text-white bg-transparent border-0 border-b-2  appearance-none   focus:outline-none focus:ring-0  peer"
               value={value1} onChange={(event)=>{  setValue1(event.target.value);}}>
-              <option selected className="bg-black ">{value1}</option>
+              <option selected value={value1} className="bg-black ">{value1}</option>
              
               <option value="MUD" className="bg-black ">MUD</option>
               <option value="ZAR" className="bg-black ">ZAR</option>

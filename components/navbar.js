@@ -6,7 +6,7 @@ export default function Navbar() {
   const [menuIcon, setMenuIcon] = useState(false);
   return (
     <>
-      <div className="w-screen h-{80px} bg-red mt-5 bg-transparent fixed ">
+      <div className="w-screen h-{80px} bg-red mt-5 mb-10 bg-transparent fixed ">
         <div className="flex items-center sm:justify-around justify-between w-full h-full px-2">
           <Image src={logo} width={50} height={50} className="ml-5"></Image>
           <ul className="hidden md:flex  sm:justify-between text-white font-bold text-lg sm:items-center sm:space-x-7 ">
